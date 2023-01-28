@@ -1,0 +1,44 @@
+{
+  "kind": "collectionType",
+  "collectionName": "souvenirs",
+  "info": {
+    "singularName": "souvenir",
+    "pluralName": "souvenirs",
+    "displayName": "souvenir",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "foto": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images"
+      ]
+    },
+    "titulo": {
+      "type": "string",
+      "required": true
+    },
+    "precio": {
+      "type": "decimal",
+      "required": true
+    },
+    "ciudad": {
+      "type": "string",
+      "required": true
+    },
+    "tipo": {
+      "type": "string",
+      "required": true
+    },
+    "url": {
+      "type": "uid",
+      "targetField": "titulo"
+    }
+  }
+}
